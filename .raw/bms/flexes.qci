@@ -1,0 +1,367 @@
+
+     flexfile "bms/eyelids.vta" {
+          flex "right_lid_raiser" frame 1
+          flex "left_lid_raiser" frame 2
+          flex "right_lid_droop" frame 3
+          flex "left_lid_droop" frame 4
+          flex "right_lid_closer" frame 5
+          flex "left_lid_closer" frame 6
+          flex "half_closed" frame 7
+          flex "blink" frame 8
+     }
+     flexcontroller shape right_lid_raiser "range" 0.000 1.000
+     flexcontroller shape left_lid_raiser "range" 0.000 1.000
+     flexcontroller shape right_lid_droop "range" 0.000 1.000
+     flexcontroller shape left_lid_droop "range" 0.000 1.000
+     flexcontroller shape right_lid_closer "range" 0.000 1.000
+     flexcontroller shape left_lid_closer "range" 0.000 1.000
+     flexcontroller shape half_closed "range" 0.000 1.000
+     flexcontroller shape blink "range" 0.000 1.000
+    %right_lid_raiser =  right_lid_raiser
+    %left_lid_raiser =  left_lid_raiser
+    %right_lid_droop =  right_lid_droop
+    %left_lid_droop =  left_lid_droop
+    %right_lid_closer =  right_lid_closer
+    %left_lid_closer =  left_lid_closer
+    %half_closed =  half_closed
+    %blink = blink
+     flexfile "bms/flexes.vta" {
+          flex "upper_right" frame 2
+          flex "lower_right" frame 4
+          flex "upper_left" frame 6
+          flex "lower_left" frame 8
+          flexpair "BU03" 1.0 frame 9
+          flexpair "AU1" 1.0 frame 10
+          flexpair "AU2" 1.0 frame 11
+          flexpair "AU4" 1.0 frame 12
+          flexpair "AU1AU2" 1.0 frame 13
+          flexpair "AU12" 1.0 frame 14
+          flex "AU12AU25" frame 15
+          flexpair "AU15" 1.0 frame 16
+          flexpair "AU17" 1.0 frame 17
+          flexpair "AU10" 1.0 frame 18
+          flex "AU16" frame 19
+          flexpair "AU6" 1.0 frame 20
+          flexpair "AU9" 1.0 frame 21
+          flexpair "AU25" 1.0 frame 22
+          flexpair "AU18" 1.0 frame 23
+          flexpair "AU22" 1.0 frame 24
+          flexpair "AU20" 1.0 frame 25
+          flex "AU32" frame 26
+          flex "AU24" frame 27
+          flex "AU38" frame 28
+          flex "AU31" frame 29
+          flexpair "AU26" 1.0 frame 30
+          flexpair "AU27" 1.0 frame 31
+          flexpair "AU27Z" 1.0 frame 32
+          flex "SH01" frame 33
+          flex "SH02" frame 34
+          flex "SH03" frame 35
+          flex "SH04" frame 36
+          flex "SH05" frame 37
+          flex "SH06" frame 38
+          flex "SH07" frame 39
+          flex "SH08" frame 40
+          flex "SH09" frame 41
+          flex "SH10" frame 42
+          flex "SH11" frame 43
+          flex "SH12" frame 44
+          flex "SH13" frame 45
+          flex "SH14" frame 46
+          flex "SH15" frame 47
+          flex "SH16" frame 48
+          flex "SH17" frame 49
+          flex "SH18" frame 50
+          flex "SH19" frame 51
+          flex "SH20" frame 52
+          flex "SH21" frame 53
+          flex "SH22" frame 54
+          flex "SH23" frame 55
+          flex "SH24" frame 56
+          flex "SH25" frame 57
+          flex "SH26" frame 58
+          flex "SH27" frame 59
+          flex "SH28" frame 60
+          flex "SH29" frame 61
+          flex "SH30" frame 62
+          flex "SH31" frame 63
+          flex "SH32" frame 64
+          flex "SH33" frame 65
+          flex "SH34" frame 66
+          flex "SH35" frame 67
+          flex "SH36" frame 68
+          flex "SH37" frame 69
+          flex "SH38" frame 70
+          flex "SH39" frame 71
+          flex "SH40" frame 72
+          flex "SH41" frame 73
+          flex "SH42" frame 74
+          flex "SH43" frame 75
+          flex "SH44" frame 76
+          flex "SH45" frame 77
+          flex "SH46" frame 78
+          flex "SH47" frame 79
+          flex "SH48" frame 80
+          flex "SH49" frame 81
+          flex "SH50" frame 82
+          flex "SH51" frame 83
+          flex "SH52" frame 84
+          flex "SH53" frame 85
+          flex "SH54" frame 86
+          flex "SH55" frame 87
+          flex "SH56" frame 88
+          flex "SH57" frame 89
+          flex "SH58" frame 90
+          flex "SH59" frame 91
+          flex "SH60" frame 92
+          flex "SH61" frame 93
+          flex "SH62" frame 94
+          flex "SH63" frame 95
+          flex "SH64" frame 96
+          flex "SH65" frame 97
+          flex "SH66" frame 98
+          flex "SH67" frame 99
+          flex "SH68" frame 100
+          flex "SH69" frame 101
+          flex "SH70" frame 102
+          flex "SH71" frame 103
+          flex "SH72" frame 104
+          flex "SH73" frame 105
+          flex "SH74" frame 106
+          flex "SH75" frame 107
+          flex "SH76" frame 108
+          flex "SH77" frame 109
+          flex "SH79" frame 110
+          flex "SH78" frame 111
+     }
+     eyeball righteye ValveBiped.Bip01_Head1 -1.279 -3.720 67.250 eyeball_r 1.000  4.000 Base_M_D 0.630
+     eyeball lefteye ValveBiped.Bip01_Head1 1.329 -3.720 67.250 eyeball_l 1.000  -4.000 Base_M_D 0.630
+     // If you uncomment the following lines the eyes will be closed
+     // I'm including it anyway in case anyone wants to experiment
+     // eyelid  upper_right "flexes.vta" lowerer 2 -0.120000 neutral 2 0.170000 raiser 2 0.420000 split 0.1 eyeball righteye
+     // eyelid  lower_right "flexes.vta" lowerer 4 -0.250000 neutral 4 -0.160000 raiser 4 -0.070000  split 0.1 eyeball righteye
+     // If you uncomment the following lines the eyes will be closed
+     // I'm including it anyway in case anyone wants to experiment
+     // eyelid  upper_left "flexes.vta" lowerer 6 -0.120000 neutral 6 0.170000 raiser 6 0.420000 split -0.1 eyeball lefteye
+     // eyelid  lower_left "flexes.vta" lowerer 8 -0.250000 neutral 8 -0.160000 raiser 8 -0.070000  split -0.1 eyeball lefteye
+     mouth 0 "mouth"  ValveBiped.Bip01_Head1 0.000 1.000 0.000
+     flexcontroller eyelid right_lid_tightener "range" 0.000 1.000
+     flexcontroller eyelid left_lid_tightener "range" 0.000 1.000
+     flexcontroller brow right_inner_raiser "range" 0.000 1.000
+     flexcontroller brow left_inner_raiser "range" 0.000 1.000
+     flexcontroller brow right_outer_raiser "range" 0.000 1.000
+     flexcontroller brow left_outer_raiser "range" 0.000 1.000
+     flexcontroller brow right_lowerer "range" 0.000 1.000
+     flexcontroller brow left_lowerer "range" 0.000 1.000
+     flexcontroller nose right_cheek_raiser "range" 0.000 1.000
+     flexcontroller nose left_cheek_raiser "range" 0.000 1.000
+     flexcontroller nose wrinkler "range" 0.000 1.000
+     flexcontroller nose dilator "range" 0.000 1.000
+     flexcontroller mouth right_upper_raiser "range" 0.000 1.000
+     flexcontroller mouth left_upper_raiser "range" 0.000 1.000
+     flexcontroller mouth right_corner_puller "range" 0.000 1.000
+     flexcontroller mouth left_corner_puller "range" 0.000 1.000
+     flexcontroller mouth right_corner_depressor "range" 0.000 1.000
+     flexcontroller mouth left_corner_depressor "range" 0.000 1.000
+     flexcontroller mouth chin_raiser "range" 0.000 1.000
+     flexcontroller phoneme right_part "range" 0.000 1.000
+     flexcontroller phoneme left_part "range" 0.000 1.000
+     flexcontroller phoneme right_puckerer "range" 0.000 1.000
+     flexcontroller phoneme left_puckerer "range" 0.000 1.000
+     flexcontroller phoneme right_funneler "range" 0.000 1.000
+     flexcontroller phoneme left_funneler "range" 0.000 1.000
+     flexcontroller phoneme right_stretcher "range" 0.000 1.000
+     flexcontroller phoneme left_stretcher "range" 0.000 1.000
+     flexcontroller phoneme bite "range" 0.000 1.000
+     flexcontroller phoneme presser "range" 0.000 1.000
+     flexcontroller phoneme tightener "range" 0.000 1.000
+     flexcontroller phoneme jaw_clencher "range" 0.000 1.000
+     flexcontroller phoneme jaw_drop "range" 0.000 1.000
+     flexcontroller phoneme right_mouth_drop "range" 0.000 1.000
+     flexcontroller phoneme left_mouth_drop "range" 0.000 1.000
+     flexcontroller mouth smile "range" 0.000 1.000
+     flexcontroller mouth lower_lip "range" 0.000 1.000
+     flexcontroller head head_rightleft "range" -30.000 30.000
+     flexcontroller head head_updown "range" -15.000 15.000
+     flexcontroller head head_tilt "range" -15.000 15.000
+     flexcontroller eyes eyes_updown "range" -30.000 30.000
+     flexcontroller eyes eyes_rightleft "range" -30.000 30.000
+     flexcontroller body move_rightleft "range" -6.000 6.000
+     flexcontroller body move_forwardback "range" -10.000 6.000
+     flexcontroller body move_updown "range" -10.000 2.000
+     flexcontroller body body_rightleft "range" -30.000 30.000
+     flexcontroller chest chest_rightleft "range" -30.000 30.000
+     flexcontroller head head_forwardback "range" -0.200 0.200
+     flexcontroller gesture gesture_updown "range" -1.000 1.000
+     flexcontroller gesture gesture_rightleft "range" -1.000 1.000
+     flexcontroller shape brow_h "range" 0.000 1.000
+     flexcontroller shape cheek_depth "range" 0.000 1.000
+     flexcontroller shape cheek_fat_max "range" 0.000 1.000
+     flexcontroller shape cheek_fat_min "range" 0.000 1.000
+     flexcontroller shape chin_butt "range" 0.000 1.000
+     flexcontroller shape chin_width "range" 0.000 1.000
+     flexcontroller shape chin_height "range" 0.000 1.000
+     flexcontroller shape face_d_min "range" 0.000 1.000
+     flexcontroller shape face_d_max "range" 0.000 1.000
+     flexcontroller shape head_height "range" 0.000 1.000
+     flexcontroller shape head_w_min "range" 0.000 1.000
+     flexcontroller shape head_w_max "range" 0.000 1.000
+     flexcontroller shape neck_size "range" 0.000 1.000
+     flexcontroller shape ears_angle "range" 0.000 1.000
+     flexcontroller shape ears_height "range" 0.000 1.000
+     flexcontroller shape eyes_ang_min "range" 0.000 1.000
+     flexcontroller shape eyes_ang_max "range" 0.000 1.000
+     flexcontroller shape eyes_height "range" 0.000 1.000
+     flexcontroller shape jaw_depth "range" 0.000 1.000
+     flexcontroller shape lowlip_size "range" 0.000 1.000
+     flexcontroller shape uplip_size "range" 0.000 1.000
+     flexcontroller shape mouth_w_min "range" 0.000 1.000
+     flexcontroller shape mouth_w_max "range" 0.000 1.000
+     flexcontroller shape mouth_h_min "range" 0.000 1.000
+     flexcontroller shape mouth_h_max "range" 0.000 1.000
+     flexcontroller shape mouth_depth "range" 0.000 1.000
+     flexcontroller shape nose_w_min "range" 0.000 1.000
+     flexcontroller shape nose_w_max "range" 0.000 1.000
+     flexcontroller shape nose_h_min "range" 0.000 1.000
+     flexcontroller shape nose_h_max "range" 0.000 1.000
+     flexcontroller shape nose_angle "range" 0.000 1.000
+     flexcontroller shape nose_d_max "range" 0.000 1.000
+     flexcontroller shape nost_height "range" 0.000 1.000
+     flexcontroller shape nost_width "range" 0.000 1.000
+     flexcontroller shape nose_tip "range" 0.000 1.000
+     flexcontroller shape cigar_mouth "range" 0.000 1.000
+     flexcontroller shape hairline_puff "range" 0.000 1.000
+    localvar upper_right_raiser
+    %upper_right_raiser = ((( right_lid_raiser * ( 1.000 - ( right_lid_droop *  0.800))) * ( 1.000 -  right_lid_closer)) * ( 1.000 -  blink))
+    localvar upper_left_raiser
+    %upper_left_raiser = ((( left_lid_raiser * ( 1.000 - ( left_lid_droop *  0.800))) * ( 1.000 -  left_lid_closer)) * ( 1.000 -  blink))
+    localvar upper_right_neutral
+    %upper_right_neutral = (((( 1.000 - ( right_lid_droop *  0.800)) * ( 1.000 -  right_lid_raiser)) * ( 1.000 -  right_lid_closer)) * ( 1.000 -  blink))
+    localvar upper_left_neutral
+    %upper_left_neutral = (((( 1.000 - ( left_lid_droop *  0.800)) * ( 1.000 -  left_lid_raiser)) * ( 1.000 -  left_lid_closer)) * ( 1.000 -  blink))
+    localvar upper_right_lowerer
+    %upper_right_lowerer = ( right_lid_closer + ( blink * ( 1.000 -  right_lid_closer)))
+    localvar upper_left_lowerer
+    %upper_left_lowerer = ( left_lid_closer + ( blink * ( 1.000 -  left_lid_closer)))
+    localvar lower_right_raiser
+    %lower_right_raiser = ( right_lid_closer + (( blink *  0.500) * ( 1.000 -  right_lid_closer)))
+    localvar lower_left_raiser
+    %lower_left_raiser = ( left_lid_closer + (( blink *  0.500) * ( 1.000 -  left_lid_closer)))
+    localvar lower_right_neutral
+    %lower_right_neutral = (((( 1.000 -  right_lid_closer) * ( 1.000 - ( 0.500 *  blink))) * ( 1.000 - ( right_lid_tightener *  0.500))) * ( 1.000 - ( right_cheek_raiser *  0.250)))
+    localvar lower_left_neutral
+    %lower_left_neutral = (((( 1.000 -  left_lid_closer) * ( 1.000 - ( 0.500 *  blink))) * ( 1.000 - ( left_lid_tightener *  0.500))) * ( 1.000 - ( left_cheek_raiser *  0.250)))
+    localvar lower_right_lowerer
+    %lower_right_lowerer =  0.000
+    localvar lower_left_lowerer
+    %lower_left_lowerer =  0.000
+    %BU03L =  left_lid_tightener
+    %BU03R =  right_lid_tightener
+    %AU1R = (( right_inner_raiser * ( 1.000 -  right_outer_raiser)) * ( 1.000 -  right_lowerer))
+    %AU1L = (( left_inner_raiser * ( 1.000 -  left_outer_raiser)) * ( 1.000 -  left_lowerer))
+    %AU2R = (( right_outer_raiser * ( 1.000 -  right_inner_raiser)) * ( 1.000 -  right_lowerer))
+    %AU2L = (( left_outer_raiser * ( 1.000 -  left_inner_raiser)) * ( 1.000 -  left_lowerer))
+    %AU1AU2R = (( right_inner_raiser *  right_outer_raiser) * ( 1.000 -  right_lowerer))
+    %AU1AU2L = (( left_inner_raiser *  left_outer_raiser) * ( 1.000 -  left_lowerer))
+    %AU4R =  right_lowerer
+    %AU4L =  left_lowerer
+    %AU6R =  right_cheek_raiser
+    %AU6L =  left_cheek_raiser
+    %AU9R =  wrinkler
+    %AU9L =  wrinkler
+    %AU38 =  dilator
+    localvar right_open
+    %right_open = ((((( smile + ( right_part * ( 1.000 -  smile))) +  right_puckerer) +  right_funneler) + ( right_upper_raiser *  0.500)) + ( lower_lip *  0.500))
+    localvar left_open
+    %left_open = ((((( smile + ( left_part * ( 1.000 -  smile))) +  left_puckerer) +  left_funneler) + ( left_upper_raiser *  0.500)) + ( lower_lip *  0.500))
+    localvar right_lip_suppressor
+    %right_lip_suppressor = ((( 1.000 /  %right_open) * ( 1.000 -  presser)) * ( 1.000 -  bite))
+    localvar left_lip_suppressor
+    %left_lip_suppressor = ((( 1.000 /  %left_open) * ( 1.000 -  presser)) * ( 1.000 -  bite))
+    %AU10R = ( right_upper_raiser * (( right_upper_raiser *  0.500) *  %right_lip_suppressor))
+    %AU10L = ( left_upper_raiser * (( left_upper_raiser *  0.500) *  %left_lip_suppressor))
+    %AU25R = (( right_part * ( right_part *  %right_lip_suppressor)) * ( 1.000 -  smile))
+    %AU25L = (( left_part * ( left_part *  %left_lip_suppressor)) * ( 1.000 -  smile))
+    %AU12AU25 = ( smile * (( smile *  0.500) * ( %right_lip_suppressor +  %left_lip_suppressor)))
+    %AU18R = ( right_puckerer * ( right_puckerer *  %right_lip_suppressor))
+    %AU18L = ( left_puckerer * ( left_puckerer *  %left_lip_suppressor))
+    %AU22R = ( right_funneler * ( right_funneler *  %right_lip_suppressor))
+    %AU22L = ( left_funneler * ( left_funneler *  %left_lip_suppressor))
+    %AU17R = (((( chin_raiser * ( 1.000 - ( jaw_drop *  0.500))) * ( 1.000 -  bite)) * ( 1.000 - ( 0.600 * (( %AU25R +  %AU18R) +  %AU22R)))) * ( 1.000 -  smile))
+    %AU17L = (((( chin_raiser * ( 1.000 - ( jaw_drop *  0.500))) * ( 1.000 -  bite)) * ( 1.000 - ( 0.600 * (( %AU25L +  %AU18L) +  %AU22L)))) * ( 1.000 -  smile))
+    localvar right_depressor_suppressor
+    %right_depressor_suppressor = ((( 1.000 / ((((((( %AU18R *  0.800) + ( %AU22R *  0.800)) +  %AU17R) +  bite) +  right_corner_puller) +  right_stretcher) +  right_corner_depressor)) * ( 1.000 - ( jaw_drop *  0.500))) * ( 1.000 - ( smile *  0.500)))
+    localvar left_depressor_suppressor
+    %left_depressor_suppressor = ((( 1.000 / ((((((( %AU18L *  0.800) + ( %AU22L *  0.800)) +  %AU17L) +  bite) +  left_corner_puller) +  left_stretcher) +  left_corner_depressor)) * ( 1.000 - ( jaw_drop *  0.500))) * ( 1.000 - ( smile *  0.500)))
+    %AU15R = ( right_corner_depressor * ( right_corner_depressor *  %right_depressor_suppressor))
+    %AU15L = ( left_corner_depressor * ( left_corner_depressor *  %left_depressor_suppressor))
+    localvar right_corner_suppressor
+    %right_corner_suppressor = ((( 1.000 / ((((((( %AU18R *  0.800) + ( %AU22R *  0.800)) +  %AU17R) +  bite) +  right_corner_puller) +  right_stretcher) +  right_corner_depressor)) * ( 1.000 - ( jaw_drop *  0.500))) * ( 1.000 -  smile))
+    localvar left_corner_suppressor
+    %left_corner_suppressor = ((( 1.000 / ((((((( %AU18L *  0.800) + ( %AU22L *  0.800)) +  %AU17L) +  bite) +  left_corner_puller) +  left_stretcher) +  left_corner_depressor)) * ( 1.000 - ( jaw_drop *  0.500))) * ( 1.000 -  smile))
+    %AU12R = ( right_corner_puller * ( right_corner_puller *  %right_corner_suppressor))
+    %AU12L = ( left_corner_puller * ( left_corner_puller *  %left_corner_suppressor))
+    %AU20R = ( right_stretcher * ( right_stretcher *  %right_corner_suppressor))
+    %AU20L = ( left_stretcher * ( left_stretcher *  %left_corner_suppressor))
+    %AU32 =  bite
+    %AU24 = ( presser + (( 1.000 -  presser) *  tightener))
+    %AU31 = ( jaw_clencher * ( jaw_clencher / ( jaw_clencher +  jaw_drop)))
+    localvar right_drop_suppressor
+    %right_drop_suppressor = ((( 1.000 / (( 0.500 *  %right_open) +  right_mouth_drop)) * ( 1.000 -  presser)) * ( 1.000 -  bite))
+    localvar left_drop_suppressor
+    %left_drop_suppressor = ((( 1.000 / (( 0.500 *  %left_open) +  left_mouth_drop)) * ( 1.000 -  presser)) * ( 1.000 -  bite))
+    localvar right_drop
+    %right_drop = ( right_mouth_drop * ( right_mouth_drop *  %right_drop_suppressor))
+    localvar left_drop
+    %left_drop = ( left_mouth_drop * ( left_mouth_drop *  %left_drop_suppressor))
+    %AU26R = (( jaw_drop * ( 1.000 -  %right_drop)) * ( jaw_drop / ( jaw_clencher +  jaw_drop)))
+    %AU26L = (( jaw_drop * ( 1.000 -  %left_drop)) * ( jaw_drop / ( jaw_clencher +  jaw_drop)))
+    %AU27R = (( jaw_drop *  %right_drop) * ( jaw_drop / ( jaw_clencher +  jaw_drop)))
+    %AU27L = (( jaw_drop *  %left_drop) * ( jaw_drop / ( jaw_clencher +  jaw_drop)))
+    localvar AU42a
+    %AU42a =  blink
+    localvar AU42L
+    %AU42L =  left_lid_droop
+    localvar AU42R
+    %AU42R =  right_lid_droop
+    %AU16 = (( lower_lip * (( lower_lip *  0.250) * ( %right_lip_suppressor +  %left_lip_suppressor))) * ( 1.000 - ( 0.500 * ( %AU27R +  %AU27L))))
+    localvar mouth
+    %mouth = ((((((((((( %AU27R *  0.500) + ( %AU27L *  0.500)) + ( %AU22R *  0.350)) + ( %AU22L *  0.350)) + ( %AU18R *  0.250)) + ( %AU18L *  0.250)) + ( %AU25R *  0.350)) + ( %AU25L *  0.350)) + ( %AU32 *  0.500)) +  %AU12AU25) + ( %AU16 *  0.400))
+    %SH03 =  brow_h
+    %SH06 =  cheek_depth
+    %SH09 =  cheek_fat_max
+    %SH10 =  cheek_fat_min
+    %SH11 =  chin_butt
+    %SH13 =  chin_width
+    %SH15 =  chin_height
+    %SH23 =  face_d_min
+    %SH24 =  face_d_max
+    %SH28 =  head_height
+    %SH29 =  head_w_min
+    %SH30 =  head_w_max
+    %SH36 =  neck_size
+    %SH38 =  ears_angle
+    %SH42 =  ears_height
+    %SH45 =  eyes_ang_min
+    %SH46 =  eyes_ang_max
+    %SH48 =  eyes_height
+    %SH52 =  jaw_depth
+    %SH56 =  lowlip_size
+    %SH58 =  uplip_size
+    %SH59 =  mouth_w_min
+    %SH60 =  mouth_w_max
+    %SH61 =  mouth_h_min
+    %SH62 =  mouth_h_max
+    %SH64 =  mouth_depth
+    %SH65 =  nose_w_min
+    %SH66 =  nose_w_max
+    %SH67 =  nose_h_min
+    %SH68 =  nose_h_max
+    %SH70 =  nose_angle
+    %SH72 =  nose_d_max
+    %SH74 =  nost_height
+    %SH76 =  nost_width
+    %SH77 =  nose_tip
+    %SH78 =  hairline_puff
+    %SH79 =  cigar_mouth
+}

@@ -1,0 +1,40 @@
+
+vertexlitgeneric
+{
+
+	$basetexture models/jessev92/characters/secretservice/body_upper_white_d
+	$bumpmap models/jessev92/characters/secretservice/body_upper_b
+	$lightwarptexture dev/identitylightwarp
+
+	$nocull 1
+	$halflambert 1
+	$ambientocclusion 1
+
+	$phong 1
+	$phongboost 1
+	$phongfresnelranges "[ 0.01 ]"
+	$phongexponent 20
+	$phongalbedotint 1
+
+	$blendtintbybasealpha 1
+	$blendtintcoloroverbase 0
+
+	$phongbrightnessscalar 0.5
+
+	Proxies
+	{
+		PlayerColor
+		{
+			resultVar	$color2 // pass the player color value to Gmod
+			default		1 1 1 // unused for now.
+		}
+		Clamp // clamp the chosen color between 1% and 125% (usually)
+		{
+			min 0.3
+			max 0.9
+			srcVar1 "$color2"
+			resultVar "$color2"
+		}
+	}
+
+}

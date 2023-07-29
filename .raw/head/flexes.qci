@@ -1,0 +1,54 @@
+
+eyeball "eye_right" "ValveBiped.Bip01_Head1" -1.357000 -3.738000 67.807003 "eyeball_r" 1 4 "iris_unused" 0.6
+eyeball "eye_left" "ValveBiped.Bip01_Head1" 1.291000 -3.702000 67.779003 "eyeball_l" 1 -4 "iris_unused" 0.6
+
+flexfile "flexes.vta" 
+{
+	defaultflex frame 0
+	flex "right_lid_closer" frame 1
+	flex "left_lid_closer" frame 2
+	flex "blink" frame 3
+	flex "right_inner_raiser" frame 4
+	flex "left_inner_raiser" frame 5
+	flex "right_outer_raiser" frame 6
+	flex "left_outer_raiser" frame 7
+	flex "right_lowerer" frame 8
+	flex "left_lowerer" frame 9
+	flex "right_corner_depressor" frame 10
+	flex "left_corner_depressor" frame 11
+	flex "jaw_drop" frame 12
+	flex "smile" frame 13
+}
+
+flexcontroller phoneme range 0 1 "blank"
+flexcontroller phoneme range 0 1 "right_lid_closer"
+flexcontroller phoneme range 0 1 "left_lid_closer"
+flexcontroller phoneme range 0 1 "blink"
+flexcontroller phoneme range 0 1 "right_inner_raiser"
+flexcontroller phoneme range 0 1 "left_inner_raiser"
+flexcontroller phoneme range 0 1 "right_outer_raiser"
+flexcontroller phoneme range 0 1 "left_outer_raiser"
+flexcontroller phoneme range 0 1 "right_lowerer"
+flexcontroller phoneme range 0 1 "left_lowerer"
+flexcontroller phoneme range 0 1 "right_corner_depressor"
+flexcontroller phoneme range 0 1 "left_corner_depressor"
+flexcontroller phoneme range 0 1 "jaw_drop"
+flexcontroller phoneme range 0 1 "smile"
+flexcontroller phoneme range 0 1 "blank"
+
+localvar blank
+%blank = blank
+%right_lid_closer = right_lid_closer
+%left_lid_closer = left_lid_closer
+%blink = blink
+%right_inner_raiser = right_inner_raiser
+%left_inner_raiser = left_inner_raiser
+%right_outer_raiser = right_outer_raiser
+%left_outer_raiser = left_outer_raiser
+%right_lowerer = right_lowerer
+%left_lowerer = left_lowerer
+%right_corner_depressor = right_corner_depressor
+%left_corner_depressor = left_corner_depressor
+%jaw_drop = jaw_drop
+%smile = smile
+%blank = blank

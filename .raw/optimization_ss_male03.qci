@@ -1,0 +1,74 @@
+
+$eyeposition 0 0 70
+
+// https://wiki.garrysmod.com/page/Player_model_LOD_settings
+// https://developer.valvesoftware.com/wiki/LOD_Models
+// https://developer.valvesoftware.com/wiki/$lod
+
+$lod 9
+{
+	replacebone "ValveBiped.Bip01_L_Elbow" "ValveBiped.Bip01_L_upperarm"
+	replacebone "ValveBiped.Bip01_R_Elbow" "ValveBiped.Bip01_R_upperarm"
+	replacebone "ValveBiped.Bip01_L_Ulna" "ValveBiped.Bip01_L_Forearm"
+	replacebone "ValveBiped.Bip01_R_Ulna" "ValveBiped.Bip01_R_Forearm"
+	replacebone "ValveBiped.Bip01_L_Wrist" "ValveBiped.Bip01_L_Forearm"
+	replacebone "ValveBiped.Bip01_R_Wrist" "ValveBiped.Bip01_R_Forearm"
+	replacebone "ValveBiped.Bip01_L_Bicep" "ValveBiped.Bip01_L_upperarm"
+	replacebone "ValveBiped.Bip01_R_Bicep" "ValveBiped.Bip01_R_upperarm"
+
+	replacebone "ValveBiped.Bip01_L_Finger02" "ValveBiped.Bip01_L_Finger01"
+	replacebone "ValveBiped.Bip01_L_Finger12" "ValveBiped.Bip01_L_Finger11"
+	replacebone "ValveBiped.Bip01_L_Finger22" "ValveBiped.Bip01_L_Finger21"
+	replacebone "ValveBiped.Bip01_L_Finger32" "ValveBiped.Bip01_L_Finger31"
+	replacebone "ValveBiped.Bip01_L_Finger42" "ValveBiped.Bip01_L_Finger41"
+
+	replacebone "ValveBiped.Bip01_R_Finger02" "ValveBiped.Bip01_R_Finger01"
+	replacebone "ValveBiped.Bip01_R_Finger12" "ValveBiped.Bip01_R_Finger11"
+	replacebone "ValveBiped.Bip01_R_Finger22" "ValveBiped.Bip01_R_Finger21"
+	replacebone "ValveBiped.Bip01_R_Finger32" "ValveBiped.Bip01_R_Finger31"
+	replacebone "ValveBiped.Bip01_R_Finger42" "ValveBiped.Bip01_R_Finger41"
+}
+
+$lod 18
+{
+	nofacial
+	bonetreecollapse "ValveBiped.Bip01_L_Hand"
+	bonetreecollapse "ValveBiped.Bip01_R_Hand"
+
+	replacebone "ValveBiped.Bip01_L_Elbow" "ValveBiped.Bip01_L_upperarm"
+	replacebone "ValveBiped.Bip01_R_Elbow" "ValveBiped.Bip01_R_upperarm"
+	replacebone "ValveBiped.Bip01_L_Ulna" "ValveBiped.Bip01_L_Forearm"
+	replacebone "ValveBiped.Bip01_R_Ulna" "ValveBiped.Bip01_R_Forearm"
+	replacebone "ValveBiped.Bip01_L_Shoulder" "ValveBiped.Bip01_L_upperarm"
+	replacebone "ValveBiped.Bip01_R_Shoulder" "ValveBiped.Bip01_R_upperarm"
+	replacebone "ValveBiped.Bip01_L_Trapezius" "ValveBiped.Bip01_L_upperarm"
+	replacebone "ValveBiped.Bip01_R_Trapezius" "ValveBiped.Bip01_R_upperarm"
+	replacebone "ValveBiped.Bip01_L_Wrist" "ValveBiped.Bip01_L_Forearm"
+	replacebone "ValveBiped.Bip01_R_Wrist" "ValveBiped.Bip01_R_Forearm"
+	replacebone "ValveBiped.Bip01_L_Bicep" "ValveBiped.Bip01_L_upperarm"
+	replacebone "ValveBiped.Bip01_R_Bicep" "ValveBiped.Bip01_R_upperarm"
+}
+
+$lod 32
+{
+	removemesh "models/jessev92/characters/eyes/eyeball_l"
+	removemesh "models/jessev92/characters/eyes/eyeball_r"
+
+	nofacial
+	bonetreecollapse "ValveBiped.Bip01_L_Forearm"
+	bonetreecollapse "ValveBiped.Bip01_R_Forearm"
+	bonetreecollapse "ValveBiped.Bip01_L_Calf"
+	bonetreecollapse "ValveBiped.Bip01_R_Calf"
+	replacebone "ValveBiped.Bip01_L_Elbow" "ValveBiped.Bip01_L_upperarm"
+	replacebone "ValveBiped.Bip01_R_Elbow" "ValveBiped.Bip01_R_upperarm"
+	replacebone "ValveBiped.Bip01_L_Ulna" "ValveBiped.Bip01_L_Forearm"
+	replacebone "ValveBiped.Bip01_R_Ulna" "ValveBiped.Bip01_R_Forearm"
+	replacebone "ValveBiped.Bip01_L_Shoulder" "ValveBiped.Bip01_L_upperarm"
+	replacebone "ValveBiped.Bip01_R_Shoulder" "ValveBiped.Bip01_R_upperarm"
+	replacebone "ValveBiped.Bip01_L_Trapezius" "ValveBiped.Bip01_L_upperarm"
+	replacebone "ValveBiped.Bip01_R_Trapezius" "ValveBiped.Bip01_R_upperarm"
+	replacebone "ValveBiped.Bip01_L_Wrist" "ValveBiped.Bip01_L_Forearm"
+	replacebone "ValveBiped.Bip01_R_Wrist" "ValveBiped.Bip01_R_Forearm"
+	replacebone "ValveBiped.Bip01_L_Bicep" "ValveBiped.Bip01_L_upperarm"
+	replacebone "ValveBiped.Bip01_R_Bicep" "ValveBiped.Bip01_R_upperarm"
+}

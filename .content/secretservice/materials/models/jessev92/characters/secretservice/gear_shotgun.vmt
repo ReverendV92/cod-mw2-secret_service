@@ -1,0 +1,33 @@
+
+vertexlitgeneric
+{
+
+	$basetexture models/jessev92/characters/secretservice/gear_shotgun_d
+	$bumpmap models/jessev92/characters/secretservice/gear_shotgun_b
+	$lightwarptexture dev/identitylightwarp
+
+	$nocull 1
+	$halflambert 1
+	$ambientocclusion 1
+
+	$phong 1
+	$phongboost 1
+	$phongfresnelranges "[ 0.01 ]"
+	$phongexponent 20
+	$phongalbedotint 1
+
+	$color2 "[ 1 1 1 ]"
+	Proxies
+	{
+
+		Equals
+		{
+
+			srcvar1 $color2
+			resultVar $color2 // The shader parameter to be manipulated
+
+		}
+
+	}
+
+}
